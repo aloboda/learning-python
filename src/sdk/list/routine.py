@@ -17,3 +17,6 @@ if __name__ == '__main__':
     empty_gen = (item for item in [] if False)
     print('empty generator: {0}'.format(empty_gen))
     print('First item of empty generator:{0}'.format(next(empty_gen, 'Not found')))
+
+    indices_of_the_same_value = [i for i, x in enumerate([1, 2, 3, 4, 1, 2, 3, 4]) if x == 2]
+    print('Indices of the same value: {0}'.format(indices_of_the_same_value))
